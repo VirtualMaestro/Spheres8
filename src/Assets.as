@@ -6,7 +6,6 @@
 package
 {
 	import bb.render.textures.BBTexture;
-
 	import treefortress.sound.SoundAS;
 
 	/**
@@ -16,9 +15,6 @@ package
 		// TEXTURES
 		[Embed(source="../assets/backArrow.png")]
 		static private var backArrow:Class;
-
-		[Embed(source="../assets/miniSpheres.png")]
-		static private var etalon:Class;
 
 		[Embed(source="../assets/splash.jpg")]
 		static private var splash:Class;
@@ -40,7 +36,6 @@ package
 		static public var SPHERE_ID:String = "SPHERE_ID";
 		static public var CRYSTAL_ID:String = "CRYSTAL_ID";
 		static public var BACK_ARROW_ID:String = "BACK_ARROW_ID";
-		static public var ETALON_ID:String = "ETALON_ID";
 		static public var SPLASH_ID:String = "SPLASH_ID";
 		static public var BACKGROUND_WIN_ID:String = "BACKGROUND_WIN_ID";
 		static public var BACKGROUND_PLAY_ID:String = "BACKGROUND_PLAY_ID";
@@ -56,7 +51,6 @@ package
 			BBTexture.createFromColorCircle(Config.sphereRadius, SPHERE_ID, 0x00000000, 0xff000000, 2);
 			BBTexture.createFromColorCircle(Config.crystalRadius, CRYSTAL_ID, 0xffffffff);
 			BBTexture.createFromAsset(backArrow, BACK_ARROW_ID);
-			BBTexture.createFromAsset(etalon, ETALON_ID);
 			BBTexture.createFromAsset(splash, SPLASH_ID);
 			BBTexture.createFromAsset(playBackground, BACKGROUND_PLAY_ID);
 			BBTexture.createFromColorRect(400, 200, BACKGROUND_WIN_ID, 0xaa00FF00);
