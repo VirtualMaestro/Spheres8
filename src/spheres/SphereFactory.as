@@ -45,7 +45,7 @@ package spheres
 				var backArrow:BBNode = BBNode.get("backArrow");
 				sprite = BBSprite.get(BBTexture.getTextureById(Assets.BACK_ARROW_ID));
 				var scaleFactor:Number = Config.sphereRadius / sprite.getTexture().width;
-				sprite.scaleX = sprite.scaleY = scaleFactor;
+				sprite.offsetScaleX = sprite.offsetScaleY = scaleFactor;
 				backArrow.addComponent(sprite);
 				backArrow.mouseEnabled = true;
 				sphere.addChild(backArrow);
